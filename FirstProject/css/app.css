@@ -1,0 +1,186 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    
+}
+body{
+    background: url("../img/fond.png");
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border: black solid 5px;
+    box-shadow: 3px 0 .5em black;
+}
+
+.head-logo, .nav, .banner, .services, .articles, footer{
+width: 100%;
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;background-color: white;
+
+}
+/***************************************
+                Header
+
+****************************************/
+
+.logo a:first-child span{
+    font-size: 35px;
+    font-weight: 900;
+}
+.logo:first-child a{
+    text-decoration: none;
+}
+.title-logo{
+   color: rgb(230, 107, 223);
+   font-size: 15px;
+   text-align: center;
+   display: block;
+}
+.help,.number-help{
+    color: rgb(98, 142, 224);
+    font-size: 16px;
+    font-weight: 900;
+}
+.help span:last-of-type{
+    font-size: 10px;
+    color: violet;
+}
+.number-help{
+    padding-left: 35px;
+    background-image: url("../img/aide.png");
+}
+.dashboard{
+    max-width: 20% ;
+    background-color: rgb(252, 210, 248);
+    text-align:center;
+    color: rgb(12, 11, 11);
+}
+.dashboard a{
+    text-decoration: none;
+}
+.panier{
+    color: rgb(14, 12, 12);
+    display:inline-block; 
+    vertical-align: middle;
+    height: 100%;
+ }
+ .nav{background-color: turquoise;}
+ .nav ul{ display: flex; flex-wrap: wrap;}
+ .nav-links li{  list-style: none; padding: 10px 25px; color: rgb(253, 253, 215);}
+ .nav-links li:hover{background-color: coral;}
+
+ /***************************************
+                Main
+
+****************************************/
+
+ .services-payment, .services_delivery{
+     width: 25%;
+     padding: 20px;
+     border-right:#333333 solid 1px;
+ }
+ .banner img{
+     width: 100%;
+ }
+ .services h3{
+     line-height: 25px;
+    color: teal;
+}
+ #p-services{
+    width: 50%;
+    padding: 20px;
+    border-right:#333333 solid 1px;
+ }
+ .articles div{
+ 
+     border: black solid 1px;
+     box-shadow: 3px 0 .5em black;
+     width: 30%;
+     margin-left: 10px;
+     margin-right: 10px;
+ }
+ .articles h4{
+     background: rgb(252, 210, 248);
+     text-align: center;
+     font-size: 19px;
+     font-weight: 900;
+     font-family: 'Anton', sans-serif;
+ }
+ .articles span{
+    background: rgb(252, 210, 248);
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    font-weight: 900;
+ }
+ .articles p{
+     display: inline-flex;
+     text-align: justify;
+ }
+
+
+/*********************************************
+                Footer
+
+**********************************************/
+
+ .nav-footer{
+     font-size: 15px;
+     margin: 0 auto;
+     margin-top: 20px;
+     height: 50px;
+     width: 100%;
+     background-color: rgb(247, 245, 151);
+ }
+ .nav-footer ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+ }
+
+ .nav-footer ul li:after {
+    content: ' - ';
+    position: relative;
+    margin-left: 1px;
+  }
+  .nav-footer ul li:last-child:after{
+    content: '';
+    position: absolute;
+    margin-left: 1px;
+  }
+  .nav-footer a{
+      text-decoration: none;
+      color: black;
+  }
+  .nav-footer a:hover{
+    text-decoration: none;
+    color: rgb(255, 172, 230);
+}
+
+/********************************************************
+                        Mobiles
+
+*********************************************************/
+
+@media only screen and (max-width: 700px) {
+    #services, .services-payment, .services_delivery{
+        width: 100%;
+        padding: 20px;
+        border-right:#333333 solid 1px;
+    }
+    .articles div{
+        width: 100%;
+        padding-top: 20px;
+    }
+
+  }
